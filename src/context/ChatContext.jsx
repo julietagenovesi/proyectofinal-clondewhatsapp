@@ -25,7 +25,7 @@ const ChatProvider = ({ children }) => {
           status: "online",
           lastSeen: "En línea",
           messages: [
-            { id: 1, text: "Hola, como estas?", time: "00:40" }
+            { id: 1, text: "Hola Sofi, como estas?", time: "10:30" }
           ]
         },
         {

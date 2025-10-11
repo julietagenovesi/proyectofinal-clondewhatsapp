@@ -40,7 +40,7 @@ export default function Chat() {
         : u
     )
 
-    setUsers(updatedUsers) // esto dispara el useEffect del contexto que guarda en localStorage
+    setUsers(updatedUsers)
 
     setMsg("")
   }
@@ -61,10 +61,10 @@ export default function Chat() {
         </div>
 
         <div className="chat-actions">
-          <button title="Camera">📷</button>
-          <button title="Gallery">🖼️</button>
-          <button title="Settings">⚙️</button>
-          <button title="Help">❓</button>
+          <button title="Camara"><i className='bx bx-camera'></i></button>
+          <button title="Galeria"><i className='bx bx-image'></i></button>
+          <button title="Configuración"><i className='bx bx-cog'></i></button>
+          <button title="Ayuda"><i className='bx bx-help-circle'></i></button>
         </div>
       </header>
 
