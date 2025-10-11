@@ -39,7 +39,6 @@
 
 }
 
-
 .sidebar {
   width: 350px;
   background-color: #ffffff;
@@ -94,7 +93,6 @@
 }
 
 /* Estilos User-list */
-
 .user-list {
   list-style: none;
   display: flex;
@@ -136,7 +134,6 @@
 }
 
 /* Estilos end user list */
-
 .chat {
   flex: 1;
   display: flex;
@@ -151,7 +148,6 @@
 }
 
 /*Estilos chat-header */
-
 .chat-header {
   background-color: #ffffff;
   padding: 12px 16px;
@@ -198,29 +194,36 @@
 
 }
 
-.chat-messages {
-  background-color: violet;
+/*Estilos chat-messages */
+
+.chat {
+  background-color: #F5F1EB;
 }
 
 .chat-messages {
-  flex: 1;
-  padding: 15px;
-  background-color: #fafafa;
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  flex-direction: column-reverse;
+  overflow-y: auto;
   gap: 10px;
+  padding: 0px 40px 12px 40px;
 }
 
 .message {
-  background-color: rgb(206, 246, 255);
-  padding: 5px 10px;
+  background-color: #D9FDD3;
+  padding: 8px 12px;
   border-radius: 8px;
   align-self: flex-end;
   max-width: 50%;
+
+}
+
+.message p {
+  font-size: 14px;
 }
 
 .message .time {
-  font-size: 9px;
+  font-size: 10px;
   display: block;
   text-align: end;
   color: #979797;

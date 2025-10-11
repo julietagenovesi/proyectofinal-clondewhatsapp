@@ -63,8 +63,8 @@ export default function Chat() {
         </div>
 
         <div className="chat-actions">
-          <button title="Camara"><i className='bx bx-camera'></i></button>
-          <button title="Galeria"><i className='bx bx-image'></i></button>
+          <button title="Cámara"><i className='bx bx-camera'></i></button>
+          <button title="Galería"><i className='bx bx-image'></i></button>
           <button title="Configuración"><i className='bx bx-cog'></i></button>
           <button title="Ayuda"><i className='bx bx-help-circle'></i></button>
         </div>
