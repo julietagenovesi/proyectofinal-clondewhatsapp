@@ -65,7 +65,7 @@ export default function Sidebar() {
                 >
                   •
                 </span>
-                {user.status === "offline" ? user.lastSeen : "online"}
+                {user.status === "offline" ? user.lastSeen : "En línea"}
               </small>
             </div>
           </li>

@@ -23,7 +23,7 @@ const ChatProvider = ({ children }) => {
           id: 1,
           name: "Sofía Álvarez",
           status: "online",
-          lastSeen: "",
+          lastSeen: "En línea",
           messages: [
             { id: 1, text: "Hola, como estas?", time: "00:40" }
           ]
@@ -32,7 +32,7 @@ const ChatProvider = ({ children }) => {
           id: 2,
           name: "Camila Duarte",
           status: "offline",
-          lastSeen: "3 hours ago",
+          lastSeen: "hace 3 horas",
           messages: [
             { id: 1, text: "RESPONDEEEE QUE TENGO HAMBREE!", time: "15:00" },
             { id: 2, text: "estoy desde las 12 en el banco!!", time: "15:10" },
@@ -43,7 +43,7 @@ const ChatProvider = ({ children }) => {
           id: 3,
           name: "Tomás Herrera",
           status: "online",
-          lastSeen: "",
+          lastSeen: "En línea",
           messages: [
             { id: 1, text: "Me encanta programación!!", time: "19:00" },
             { id: 2, text: "El profe es un capo!!!!!", time: "19:01" }
@@ -53,7 +53,7 @@ const ChatProvider = ({ children }) => {
           id: 4,
           name: "Lucía Fernández",
           status: "offline",
-          lastSeen: "1 minute ago",
+          lastSeen: "hace 1 minuto",
           messages: [
             { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
           ]
@@ -62,7 +62,7 @@ const ChatProvider = ({ children }) => {
           id: 5,
           name: "Santiago Gómez",
           status: "online",
-          lastSeen: "",
+          lastSeen: "En línea",
           messages: [
             { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
           ]
@@ -71,7 +71,7 @@ const ChatProvider = ({ children }) => {
           id: 6,
           name: "Martina Ríos",
           status: "online",
-          lastSeen: "",
+          lastSeen: "En línea",
           messages: [
             { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
           ]
