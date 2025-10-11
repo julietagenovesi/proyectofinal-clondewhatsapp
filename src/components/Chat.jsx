@@ -83,11 +83,11 @@ export default function Chat() {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Enter text here..."
+            placeholder="Escribe un mensaje..."
             onChange={handleChange}
             value={msg}
           />
-          <button>➤</button>
+          <button><i className='bx bx-send'></i></button>
         </form>
       </footer>
     </div>
