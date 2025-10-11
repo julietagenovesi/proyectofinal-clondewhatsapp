@@ -3,6 +3,7 @@ import { useChat } from "../context/ChatContext"
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
+  const [showPopup, setShowPopup] = useState(false)
 
   // 1. Obtenemos del contexto todo lo necesario
   const { users, selectedUser, setUsers } = useChat()
@@ -45,8 +46,29 @@ export default function Chat() {
     setMsg("")
   }
 
+  const handleshowPopUp = () => {
+    setShowPopup(true)
+  }
+
+  const handleClosePopup = () => {
+    setShowPopup(false)
+  }
+
   return (
     <div className="chat">
+      {
+        showPopup === true && <section>
+          <div className="popup">
+            <h1>Ajustes</h1>
+            <p>Personalizá tus chats</p>
+            <h3>Tema</h3>
+            <p>Modo oscuro</p>
+            <h3>Color de fondo</h3>
+            <button onClick={handleClosePopup}>Guardar cambios</button>
+          </div>
+        </section>
+      }
+
       <header className="chat-header">
         <div>
           <div className="chat-user">
@@ -65,7 +87,7 @@ export default function Chat() {
         <div className="chat-actions">
           <button title="Cámara"><i className='bx bx-camera'></i></button>
           <button title="Galería"><i className='bx bx-image'></i></button>
-          <button title="Configuración"><i className='bx bx-cog'></i></button>
+          <button title="Configuración" onClick={handleshowPopUp}><i className='bx bx-cog'></i></button>
           <button title="Ayuda"><i className='bx bx-help-circle'></i></button>
         </div>
       </header>
