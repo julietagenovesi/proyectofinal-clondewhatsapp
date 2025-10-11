@@ -10,6 +10,22 @@
   height: 100vh;
 }
 
+.header-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
+
+h1 {
+  font-size: 20px;
+  color: #1DAA61;
+}
+
+.header-sidebar i {
+  font-size: 20px;
+}
+
 .sidebar {
   width: 350px;
   background-color: #ffffff;
@@ -31,11 +47,19 @@
   border-bottom: 1px solid #ddd;
 }
 
+.search-container:focus-within {
+  background-color: white;
+  border-bottom: 1px solid#1DAA61;
+}
+
+
 .search {
   border: none;
-  background-color: #F6F5F4;
   width: 100%;
+  outline: none;
+  background: transparent;
 }
+
 
 .search-container i {
   position: relative;
@@ -48,8 +72,9 @@
 .search-result {
   text-align: center;
   margin-top: 10px;
-  color: rgb(44, 33, 33);
+  color: gray;
 }
+
 
 /* user list */
 

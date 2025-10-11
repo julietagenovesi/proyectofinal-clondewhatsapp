@@ -21,6 +21,11 @@ export default function Sidebar() {
 
   return (
     <div className="sidebar">
+      <div className="header-sidebar">
+        <h1>Clon de Whatsapp</h1>
+        <i className='bx bx-log-out logout-icon'></i>
+      </div>
+
       <div className="search-container">
         <i className='bx bx-search'></i>
         <input
