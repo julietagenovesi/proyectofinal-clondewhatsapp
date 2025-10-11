@@ -55,9 +55,9 @@ export default function Chat() {
   }
 
   return (
-    <div className="chat">
+    <>
       {
-        showPopup === true && <section>
+        showPopup === true && <section className="contenedor-popup">
           <div className="popup">
             <h1>Ajustes</h1>
             <p>Personalizá tus chats</p>
@@ -68,50 +68,51 @@ export default function Chat() {
           </div>
         </section>
       }
-
-      <header className="chat-header">
-        <div>
-          <div className="chat-user">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
-              alt={user.name}
-              className="chat-avatar"
-            />
-            <div className="chat-info">
-              <strong>{user.name}</strong>
-              {user.lastSeen !== "" && <small className="last-seen"> {user.lastSeen}</small>}
+      <div className="chat">
+        <header className="chat-header">
+          <div>
+            <div className="chat-user">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
+                alt={user.name}
+                className="chat-avatar"
+              />
+              <div className="chat-info">
+                <strong>{user.name}</strong>
+                {user.lastSeen !== "" && <small className="last-seen"> {user.lastSeen}</small>}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="chat-actions">
-          <button title="Cámara"><i className='bx bx-camera'></i></button>
-          <button title="Galería"><i className='bx bx-image'></i></button>
-          <button title="Configuración" onClick={handleshowPopUp}><i className='bx bx-cog'></i></button>
-          <button title="Ayuda"><i className='bx bx-help-circle'></i></button>
-        </div>
-      </header>
-
-      <section className="chat-messages">
-        {user.messages.map((message) => (
-          <div className="message" key={message.id}>
-            <p>{message.text}</p>
-            <span className="time">{message.time}</span>
+          <div className="chat-actions">
+            <button title="Cámara"><i className='bx bx-camera'></i></button>
+            <button title="Galería"><i className='bx bx-image'></i></button>
+            <button title="Configuración" onClick={handleshowPopUp}><i className='bx bx-cog'></i></button>
+            <button title="Ayuda"><i className='bx bx-help-circle'></i></button>
           </div>
-        ))}
-      </section>
+        </header>
 
-      <footer className="chat-footer">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Escribe un mensaje..."
-            onChange={handleChange}
-            value={msg}
-          />
-          <button><i className='bx bx-send'></i></button>
-        </form>
-      </footer>
-    </div>
+        <section className="chat-messages">
+          {user.messages.map((message) => (
+            <div className="message" key={message.id}>
+              <p>{message.text}</p>
+              <span className="time">{message.time}</span>
+            </div>
+          ))}
+        </section>
+
+        <footer className="chat-footer">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              placeholder="Escribe un mensaje..."
+              onChange={handleChange}
+              value={msg}
+            />
+            <button><i className='bx bx-send'></i></button>
+          </form>
+        </footer>
+      </div>
+    </>
   )
 }
