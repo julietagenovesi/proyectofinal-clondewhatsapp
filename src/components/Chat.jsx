@@ -55,8 +55,10 @@ export default function Chat() {
               alt={user.name}
               className="chat-avatar"
             />
-            <strong>{user.name}</strong>
-            {user.lastSeen !== "" && <span className="last-seen">Last seen: {user.lastSeen}</span>}
+            <div className="chat-info">
+              <strong>{user.name}</strong>
+              {user.lastSeen !== "" && <small className="last-seen"> {user.lastSeen}</small>}
+            </div>
           </div>
         </div>
 
