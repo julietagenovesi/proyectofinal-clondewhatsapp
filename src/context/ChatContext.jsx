@@ -21,7 +21,7 @@ const ChatProvider = ({ children }) => {
       const initialUsers = [
         {
           id: 1,
-          name: "Juan perez",
+          name: "Sofía Álvarez",
           status: "online",
           lastSeen: "",
           messages: [
@@ -30,7 +30,7 @@ const ChatProvider = ({ children }) => {
         },
         {
           id: 2,
-          name: "Marita Rodriguez",
+          name: "Camila Duarte",
           status: "offline",
           lastSeen: "3 hours ago",
           messages: [
@@ -41,7 +41,7 @@ const ChatProvider = ({ children }) => {
         },
         {
           id: 3,
-          name: "Luka Nicolas Piaggi",
+          name: "Tomás Herrera",
           status: "online",
           lastSeen: "",
           messages: [
@@ -51,9 +51,27 @@ const ChatProvider = ({ children }) => {
         },
         {
           id: 4,
-          name: "Lucas Hernan Figueroa",
+          name: "Lucía Fernández",
           status: "offline",
           lastSeen: "1 minute ago",
+          messages: [
+            { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
+          ]
+        },
+        {
+          id: 5,
+          name: "Santiago Gómez",
+          status: "online",
+          lastSeen: "",
+          messages: [
+            { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
+          ]
+        },
+        {
+          id: 6,
+          name: "Martina Ríos",
+          status: "online",
+          lastSeen: "",
           messages: [
             { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
           ]
