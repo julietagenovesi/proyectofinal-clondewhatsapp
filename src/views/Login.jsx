@@ -17,6 +17,7 @@ const Login = () => {
     setError(null)
 
     if (password === PASS) {
+      localStorage.setItem("loggedInUser", "true")
       setMessage("Contraseña valida, serás redirigido.")
       setTimeout(() => {
         navigate("/chat")
