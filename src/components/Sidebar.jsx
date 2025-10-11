@@ -21,12 +21,15 @@ export default function Sidebar() {
 
   return (
     <div className="sidebar">
-      <input
-        type="text"
-        placeholder="Buscar un chat o iniciar uno nuevo..."
-        className="search"
-        onChange={handleChange}
-      />
+      <div className="search-container">
+        <i className='bx bx-search'></i>
+        <input
+          type="text"
+          placeholder="Buscar un chat o iniciar uno nuevo..."
+          className="search"
+          onChange={handleChange}
+        />
+      </div>
 
       {usersToRender.length === 0 && (
         <p className="search-result">No search found...</p>
