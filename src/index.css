@@ -59,6 +59,7 @@
   border-radius: 50px;
   border: 1px solid #F6F5F4;
   margin: 0px 0px 10px 0px;
+  cursor: pointer;
 }
 
 .search-container:hover {
