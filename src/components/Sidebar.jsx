@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useChat } from "../context/ChatContext"
+import { useNavigate } from "react-router-dom"
 
 export default function Sidebar() {
   const { users, setSelectedUser } = useChat()
@@ -10,7 +11,7 @@ export default function Sidebar() {
     setUsersToRender(users)
   }, [users])
 
-  // 🔍 Filtro por búsqueda
+  // Filtro por búsqueda
   const handleChange = (event) => {
     const searchTerm = event.target.value.toLowerCase()
     const result = users.filter((user) =>
@@ -19,11 +20,22 @@ export default function Sidebar() {
     setUsersToRender(result)
   }
 
+  //Función de Logout
+  const Navigate = useNavigate()
+
+
+  const handleLogout = () => {
+    localStorage.removeItem("loggedInUser")
+    Navigate("/")
+  }
+
   return (
     <div className="sidebar">
       <div className="header-sidebar">
         <h1>Clon de Whatsapp</h1>
-        <i className='bx bx-log-out logout-icon' title="Cerrar sesión"></i>
+        <button onClick={handleLogout}>
+          <i className='bx bx-log-out logout-icon' title="Cerrar sesión"></i>
+        </button>
       </div>
 
       <div className="search-container">
