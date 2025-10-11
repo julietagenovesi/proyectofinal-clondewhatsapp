@@ -6,7 +6,7 @@ export default function Sidebar() {
   const { users, setSelectedUser } = useChat()
   const [usersToRender, setUsersToRender] = useState(users)
 
-  // 🔄 Cada vez que cambien los usuarios globales, actualizamos la lista a renderizar
+  // Cada vez que cambien los usuarios globales, actualizamos la lista a renderizar
   useEffect(() => {
     setUsersToRender(users)
   }, [users])
@@ -22,7 +22,6 @@ export default function Sidebar() {
 
   //Función de Logout
   const Navigate = useNavigate()
-
 
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser")

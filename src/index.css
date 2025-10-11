@@ -23,9 +23,22 @@
   color: #1DAA61;
 }
 
-.header-sidebar i {
+.header-sidebar button {
   font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
 }
+
+.header-sidebar button:hover {
+  background-color: #F6F5F4;
+  border-radius: 50px;
+
+}
+
 
 .sidebar {
   width: 350px;
@@ -67,6 +80,7 @@
 
 .search-container i {
   position: relative;
+  border: none;
   left: 10px;
   color: gray;
   font-size: 18px;
