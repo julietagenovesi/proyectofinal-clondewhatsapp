@@ -10,11 +10,12 @@
   height: 100vh;
 }
 
+/* Estilos SideBar */
 .header-sidebar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px 10px 0px;
+  padding: 0px 0px 15px 0px;
 }
 
 h1 {
@@ -42,16 +43,19 @@ h1 {
   background-color: #F6F5F4;
   padding: 8px;
   gap: 15px;
-  border: none;
   border-radius: 50px;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #F6F5F4;
+}
+
+.search-container:hover {
+  border: 1px solid rgb(192, 192, 192);
 }
 
 .search-container:focus-within {
   background-color: white;
-  border-bottom: 1px solid#1DAA61;
+  border: 1px solid #1DAA61;
+  ;
 }
-
 
 .search {
   border: none;

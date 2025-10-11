@@ -23,7 +23,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="header-sidebar">
         <h1>Clon de Whatsapp</h1>
-        <i className='bx bx-log-out logout-icon'></i>
+        <i className='bx bx-log-out logout-icon' title="Cerrar sesión"></i>
       </div>
 
       <div className="search-container">
