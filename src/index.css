@@ -18,7 +18,7 @@
   padding: 0px 0px 15px 0px;
 }
 
-h1 {
+.header-sidebar h1 {
   font-size: 20px;
   color: #1DAA61;
 }
@@ -45,6 +45,7 @@ h1 {
   gap: 15px;
   border-radius: 50px;
   border: 1px solid #F6F5F4;
+  margin: 0px 0px 10px 0px;
 }
 
 .search-container:hover {
@@ -108,7 +109,7 @@ h1 {
   font-size: 16px;
 }
 
-.user-info small {
+.user-info p {
   color: #636261;
   font-size: 12px;
 }

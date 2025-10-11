@@ -56,7 +56,7 @@ export default function Sidebar() {
               <strong>
                 {user.name}
               </strong>
-              <small>
+              <p>
                 <span
                   style={{
                     color: user.status === "online" ? "green" : "red",
@@ -66,7 +66,7 @@ export default function Sidebar() {
                   •
                 </span>
                 {user.status === "offline" ? user.lastSeen : "En línea"}
-              </small>
+              </p>
             </div>
           </li>
         ))}
