@@ -64,7 +64,6 @@ h1 {
   background: transparent;
 }
 
-
 .search-container i {
   position: relative;
   left: 10px;
@@ -72,19 +71,16 @@ h1 {
   font-size: 18px;
 }
 
-
 .search-result {
   text-align: center;
   margin-top: 10px;
   color: gray;
 }
 
-
-/* user list */
+/* Estilos User-list */
 
 .user-list {
   list-style: none;
-  padding: 5px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -96,12 +92,11 @@ h1 {
   padding: 10px;
   cursor: pointer;
   width: 100%;
-  border-radius: 20px;
-  border: 1px solid #eee;
 }
 
 .user:hover {
-  background-color: #eee;
+  background-color: #F7F5F3;
+  border-radius: 15px;
 }
 
 .user-info {
@@ -109,16 +104,19 @@ h1 {
   flex-direction: column;
 }
 
+.user-info strong {
+  font-size: 16px;
+}
+
 .user-info small {
-  color: rgb(95, 95, 95);
-  font-size: 13px;
+  color: #636261;
+  font-size: 12px;
 }
 
 .avatar {
   width: 40px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 2px solid #ddd;
 }
 
 /* end user list */
