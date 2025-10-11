@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app {
@@ -12,7 +12,7 @@
 
 .sidebar {
   width: 250px;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border-right: 1px solid #ddd;
   display: flex;
   flex-direction: column;

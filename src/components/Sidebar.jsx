@@ -23,7 +23,7 @@ export default function Sidebar() {
     <div className="sidebar">
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Buscar un chat o iniciar uno nuevo..."
         className="search"
         onChange={handleChange}
       />
