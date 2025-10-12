@@ -154,7 +154,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
 }
 
 .chat-user {
@@ -170,6 +169,7 @@
 
 .chat-header img {
   width: 40px;
+  border-radius: 50px;
 }
 
 .chat-actions {
@@ -453,6 +453,10 @@
   ;
 }
 
+#Dark .search-container input {
+  color: rgb(207, 207, 207);
+}
+
 /* Dark 
   Estilos user-list */
 
@@ -462,4 +466,19 @@
 
 #Dark .user:hover {
   background-color: #2E2F2F;
+}
+
+/*Dark
+  Estilos chat-header */
+.chat-header {
+  background-color: #161717;
+  color: rgb(241, 241, 241);
+}
+
+.chat-actions button {
+  color: white;
+}
+
+.chat-actions button:hover {
+  background-color: #242625;
 }
