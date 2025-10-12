@@ -424,8 +424,7 @@
   font-size: 12px;
 }
 
-/* Dark 
-  Estilos Sidebar */
+/* Dark Estilos Sidebar */
 #Dark .sidebar {
   background-color: #161717;
   color: rgb(241, 241, 241);
@@ -458,8 +457,7 @@
   color: rgb(207, 207, 207);
 }
 
-/* Dark 
-  Estilos user-list */
+/* Dark Estilos user-list */
 
 #Dark .user-info p {
   font-weight: bold;
@@ -469,8 +467,7 @@
   background-color: #2E2F2F;
 }
 
-/*Dark
-  Estilos chat-header */
+/*Dark Estilos chat-header */
 #Dark .chat-header {
   background-color: #161717;
   color: rgb(241, 241, 241);
@@ -484,8 +481,7 @@
   background-color: #242625;
 }
 
-/*Dark
-  Estilos chat-messages */
+/*Dark Estilos chat-messages */
 
 #Dark .chat {
   background-color: rgb(37, 36, 36)
@@ -501,8 +497,7 @@
   font-weight: 400px;
 }
 
-/*Dark
-  Estilos chat-Footer*/
+/*Dark Estilos chat-Footer*/
 #Dark .chat-footer {
   background-color: #2E302F;
 }
@@ -515,4 +510,14 @@
   background-color: transparent;
   font-weight: bold;
   color: rgb(233, 226, 226);
+}
+
+/*Dark Estilos Pop Up */
+#Dark .contenedor-popup {
+  background-color: #161717b7;
+  color: white;
+}
+
+#Dark .popup {
+  background-color: #343636;
 }
