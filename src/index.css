@@ -395,16 +395,18 @@
   align-items: center;
   background: linear-gradient(135deg, #159f30, #00c6ff);
   color: white;
+  background-size: cover;
 }
 
 .login-main img {
-  width: 80px;
+  width: 15%;
   margin-bottom: 15px;
 }
 
 .login-main h1 {
   margin-bottom: 20px;
   font-size: 30px;
+  text-align: center;
 }
 
 .login-main form {
@@ -538,6 +540,10 @@
   background-color: #242625;
 }
 
+#Dark .chat-actions a {
+  color: white;
+}
+
 /*Dark Estilos chat-messages */
 
 #Dark .chat {
@@ -586,4 +592,28 @@
 
 #Dark .btn-editar {
   color: white;
+}
+
+/* brakepoint */
+@media (max-width: 480px) {
+
+  .login-main form {
+    width: 300px;
+  }
+
+  .login-main h1 {
+    font-size: 25px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .popup {
+    width: 80%;
+  }
 }
