@@ -49,21 +49,21 @@ const Login = () => {
       <img width={100} src={logo} alt="logo de whatsapp" />
       <h1>Clon de Whatsapp</h1>
       <form onSubmit={handleSubmit}>
-        <label>Contraseña de acceso</label>
-        <input
-          placeholder="Ingrese la contraseña"
-          type={showPassword ? "text" : "password"}
-          onChange={(event) => setPassword(event.target.value)}
-        />
-        <button
-          onClick={handleShowPassword}
-          type="button"><i className="fa fa-eye" aria-hidden="true"></i></button>
-        <button>Acceder</button>
-
+        <label>Clave de acceso</label>
+        <div className="input-contraseña">
+          <input
+            placeholder="Ingrese la contraseña"
+            type={showPassword ? "text" : "password"}
+            onChange={(event) => setPassword(event.target.value)}
+          />
+          <button className="btn-ver"
+            onClick={handleShowPassword}
+            type="button"><i className="fa fa-eye" aria-hidden="true"></i></button>
+        </div>
         {message && <p style={{ color: "green" }}>{message}</p>}
 
         {error && <p style={{ color: "red" }}>{error}</p>}
-
+        <button className="btn-acceder">Acceder</button>
       </form>
       <p className="text-info">Acceso restringido • Contenido privado</p>
     </main>

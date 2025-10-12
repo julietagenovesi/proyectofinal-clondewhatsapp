@@ -66,7 +66,6 @@ export default function Chat() {
             <h1>Ajustes</h1>
             <p>Personalizá tus chats</p>
             <h3>Tema</h3>
-
             <label className="switch">
               <input
                 type="checkbox"
@@ -74,6 +73,7 @@ export default function Chat() {
                 onChange={toggleTheme}
               />
               <span className="slider"></span>
+              <p>Modo claro</p>
             </label>
 
             <h3>Color de fondo</h3>
