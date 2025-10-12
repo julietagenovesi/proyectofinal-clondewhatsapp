@@ -254,8 +254,8 @@
 .chat-footer button {
   font-size: 20px;
   text-align: center;
-  color: white;
-  background-color: #1DAB62;
+  background-color: transparent;
+  color: gray;
   cursor: pointer;
   width: 35px;
   height: 35px;
@@ -265,6 +265,7 @@
 
 .chat-footer button:hover {
   background-color: #4EBA80;
+  color: white;
 }
 
 .chat-footer input {
@@ -487,7 +488,7 @@
   Estilos chat-messages */
 
 #Dark .chat {
-  background-color: rgb(39, 38, 38)
+  background-color: rgb(37, 36, 36)
 }
 
 #Dark .message {
@@ -498,4 +499,20 @@
 #Dark .message .time {
   color: white;
   font-weight: 400px;
+}
+
+/*Dark
+  Estilos chat-Footer*/
+#Dark .chat-footer {
+  background-color: #2E302F;
+}
+
+#Dark .chat-footer button {
+  color: white;
+}
+
+#Dark .chat-footer input {
+  background-color: transparent;
+  font-weight: bold;
+  color: rgb(233, 226, 226);
 }
