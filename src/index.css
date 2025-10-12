@@ -470,15 +470,15 @@
 
 /*Dark
   Estilos chat-header */
-.chat-header {
+#Dark .chat-header {
   background-color: #161717;
   color: rgb(241, 241, 241);
 }
 
-.chat-actions button {
+#Dark .chat-actions button {
   color: white;
 }
 
-.chat-actions button:hover {
+#Dark .chat-actions button:hover {
   background-color: #242625;
 }
