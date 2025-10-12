@@ -278,6 +278,7 @@
 /*Estilos Pop Up */
 .contenedor-popup {
   background-color: #a8a6a57a;
+  backdrop-filter: blur(2px);
   position: fixed;
   width: 100%;
   height: 100%;
