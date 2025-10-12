@@ -4,6 +4,7 @@ import { Messages } from "../views/Messages";
 import { NotFound } from "../views/NotFound";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { Help } from "../views/Help";
+import ProtectedRouteHelp from "../components/ProtectedRouteHelp";
 
 const RouterApp = () => {
   return (
@@ -16,7 +17,12 @@ const RouterApp = () => {
               <Messages />
             </ProtectedRoute>}
         />
-        <Route path="/help" element={<Help />} />
+        <Route path="/help"
+          element={
+            <ProtectedRouteHelp>
+              <Help />
+            </ProtectedRouteHelp>}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

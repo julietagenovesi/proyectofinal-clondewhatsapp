@@ -4,6 +4,7 @@ import { useEffect } from "react"
 import { useChat } from "../context/ChatContext"
 import { useThemeContext } from "../context/ThemeContext"
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 export default function Chat() {
@@ -16,6 +17,8 @@ export default function Chat() {
   const [myValue, setMyValue] = useState(myName)
   const [showInput, setShowInput] = useState(false)
 
+  const navigate = useNavigate()
+
   useEffect(() => {
     const storedName = localStorage.getItem("username")
     if (storedName) {
@@ -23,6 +26,16 @@ export default function Chat() {
       setMyValue(storedName)
     }
   }, [])
+
+  /*Protegiendo la ruta help */
+  useEffect(() => {
+    localStorage.setItem("userInChat", true);
+    return () => {
+      localStorage.removeItem("userInChat");
+    }
+  }, [])
+
+
 
   const user = users.find(u => u.id === selectedUser)
 
