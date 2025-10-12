@@ -55,6 +55,7 @@ export default function Chat() {
   }
 
   return (
+
     <>
       {
         showPopup === true && <section className="contenedor-popup">

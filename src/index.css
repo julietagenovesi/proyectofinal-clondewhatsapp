@@ -291,6 +291,7 @@
   background-color: #1DAB62;
   color: #ffffff;
   padding: 10px 15px 10px 15px;
+  margin-top: 15px;
   border-radius: 50px;
   border: none;
   cursor: pointer;
@@ -298,6 +299,19 @@
 
 .popup button:hover {
   background-color: #4EBA80;
+}
+
+.popup h1 {
+  font-size: 25px;
+}
+
+.popup p {
+  font-size: 14px;
+}
+
+.popup h3 {
+  font-size: 16px;
+  padding: 14px 0px 5px 0px;
 }
 
 

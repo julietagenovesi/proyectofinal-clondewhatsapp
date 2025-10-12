@@ -10,15 +10,12 @@ const RouterApp = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <ModeComponent>
-          <Route path="/chat"
-            element={
-              <ProtectedRoute>
-                <Messages />
-              </ProtectedRoute>}
-          />
-        </ModeComponent>
-
+        <Route path="/chat"
+          element={
+            <ProtectedRoute>
+              <Messages />
+            </ProtectedRoute>}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
