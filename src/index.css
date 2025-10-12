@@ -482,3 +482,20 @@
 #Dark .chat-actions button:hover {
   background-color: #242625;
 }
+
+/*Dark
+  Estilos chat-messages */
+
+#Dark .chat {
+  background-color: rgb(39, 38, 38)
+}
+
+#Dark .message {
+  background-color: #144D37;
+  color: white;
+}
+
+#Dark .message .time {
+  color: white;
+  font-weight: 400px;
+}
