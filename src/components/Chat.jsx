@@ -105,16 +105,15 @@ export default function Chat() {
                 id="material-switch" />
               <p>Modo {contextTheme}</p>
             </div>
-
             <h3>Nombre de usuario</h3>
             <div className="nombre-usuario">
               {!showInput ? (
-                <div>
-                  <p>{myName}</p>
-                  <button onClick={() => setShowInput(true)}>
+                <>
+                  <button onClick={() => setShowInput(true)} className="btn-editar">
                     <i className='bx bx-edit'></i>
                   </button>
-                </div>
+                  <p>{myName}</p>
+                </>
               ) : (
                 <>
                   <input
@@ -124,7 +123,7 @@ export default function Chat() {
                     placeholder="Nuevo nombre"
                     autoFocus
                   />
-                  <button onClick={handleSaveName}><i className='bx bx-check'></i></button>
+                  <button onClick={handleSaveName} className="btn-guardarnombre"><i className='bx bx-check'></i></button>
                 </>
               )}
             </div>

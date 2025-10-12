@@ -330,6 +330,41 @@
   cursor: pointer;
 }
 
+.nombre-usuario {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn-editar {
+  background-color: transparent;
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+}
+
+.nombre-usuario input {
+  outline: none;
+  padding: 5px;
+  border: 1px solid #242625;
+  border-radius: 10px;
+}
+
+.btn-guardarnombre {
+  background-color: #1DAB62;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+}
+
 /* Estilos Login page */
 .login-main {
   height: 100vh;
