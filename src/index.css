@@ -287,7 +287,7 @@
 
 }
 
-.popup button {
+.btn-guardar {
   background-color: #1DAB62;
   color: #ffffff;
   padding: 10px 15px 10px 15px;
@@ -297,7 +297,7 @@
   cursor: pointer;
 }
 
-.popup button:hover {
+.btn-guardar:hover {
   background-color: #4EBA80;
 }
 
@@ -314,7 +314,14 @@
   padding: 14px 0px 5px 0px;
 }
 
-
+.btn-modo {
+  background-color: #e2e2e2;
+  color: #696969;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
 
 
 

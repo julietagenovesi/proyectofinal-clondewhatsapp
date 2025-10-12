@@ -1,18 +1,18 @@
 import Chat from "../components/Chat"
 import Sidebar from "../components/Sidebar"
 import { ChatProvider } from "../context/ChatContext"
-import { ModeProvider } from "../context/ModeContext"
+import { ThemeProvider } from "../context/ThemeContext.jsx"
 
 const Messages = () => {
   return (
-    <ChatProvider>
-      <ModeProvider>
+    <ThemeProvider>
+      <ChatProvider>
         <div className="app">
           <Sidebar />
           <Chat />
         </div>
-      </ModeProvider>
-    </ChatProvider>
+      </ChatProvider>
+    </ThemeProvider>
   )
 }
 

@@ -3,7 +3,6 @@ import { Login } from "../views/Login";
 import { Messages } from "../views/Messages";
 import { NotFound } from "../views/NotFound";
 import ProtectedRoute from "../components/ProtectedRoute";
-import { ModeComponent } from "../context/ModeContext";
 
 const RouterApp = () => {
   return (

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useChat } from "../context/ChatContext"
+import { useTheme } from "../context/ThemeContext"
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
@@ -54,6 +55,8 @@ export default function Chat() {
     setShowPopup(false)
   }
 
+  const { theme, toggleTheme } = useTheme()
+
   return (
 
     <>
@@ -63,9 +66,18 @@ export default function Chat() {
             <h1>Ajustes</h1>
             <p>Personalizá tus chats</p>
             <h3>Tema</h3>
-            <p>Modo oscuro</p>
+
+            <label className="switch">
+              <input
+                type="checkbox"
+                checked={theme === "dark"}
+                onChange={toggleTheme}
+              />
+              <span className="slider"></span>
+            </label>
+
             <h3>Color de fondo</h3>
-            <button onClick={handleClosePopup}>Guardar cambios</button>
+            <button className="btn-guardar" onClick={handleClosePopup}>Guardar cambios</button>
           </div>
         </section>
       }
