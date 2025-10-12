@@ -9,9 +9,8 @@ const MessagesContent = () => {
 
   return (
     <div className={`app ${selectedUser != null ? "has-selection" : ""} `} id={contextTheme}>
-
       <Sidebar className='sidebar' />
-      <Chat className='chat' />
+      <Chat user={selectedUser} className='chat' />
     </div>
   )
 }

@@ -597,6 +597,10 @@
 /* brakepoint */
 @media (max-width: 480px) {
 
+  .app {
+    overflow: hidden;
+  }
+
   .login-main form {
     width: 300px;
   }
@@ -610,8 +614,21 @@
   }
 
   .sidebar {
-    Flex: 1 0 100%;
-    Height: 100dvh
+    flex: 1 0 100%;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .app .sidebar {
+    display: block;
+  }
+
+  .app .has-selection .sidebar {
+    display: none;
+  }
+
+  .app.has-selection .chat {
+    display: block;
   }
 
   header {
