@@ -352,6 +352,7 @@
   padding: 5px;
   border: 1px solid #242625;
   border-radius: 10px;
+  background-color: transparent;
 }
 
 .btn-guardarnombre {
@@ -556,4 +557,13 @@
 
 #Dark .popup {
   background-color: #343636;
+}
+
+#Dark .nombre-usuario input {
+  border: 1px solid #ebecec;
+  color: white;
+}
+
+#Dark .btn-editar {
+  color: white;
 }
