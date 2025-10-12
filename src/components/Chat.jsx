@@ -10,6 +10,9 @@ export default function Chat() {
   const [checked, setChecked] = useState(false)
   const { users, selectedUser, setUsers } = useChat()
   const { contextTheme, setContextTheme } = useThemeContext()
+  const [myName, setMyName] = useState('Julieta')
+  const [myValue, setMyValue] = useState("myName")
+  const [showInput, setShowInput] = useState(false)
 
   // 2. Buscamos el usuario activo
   const user = users.find(u => u.id === selectedUser)
@@ -62,6 +65,15 @@ export default function Chat() {
     setChecked(nextChecked)
   }
 
+  const handleName = (event) => {
+    setMyValue(event.target.value)
+  }
+
+  const handleSaveName = () => {
+    setMyName(myValue)
+    setShowInput(false)
+  }
+
   return (
     <>
       {
@@ -88,7 +100,29 @@ export default function Chat() {
               <p>Modo {contextTheme}</p>
             </div>
 
-            <h3>Color de fondo</h3>
+            <h3>Nombre de usuario</h3>
+            <div className="nombre-usuario">
+              {!showInput ? (
+                <div>
+                  <p>{myName}</p>
+                  <button onClick={() => setShowInput(true)}>
+                    <i className='bx bx-edit'></i>
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <input
+                    type="text"
+                    value={myValue}
+                    onChange={handleName}
+                    placeholder="Nuevo nombre"
+                    autoFocus
+                  />
+                  <button onClick={handleSaveName}><i className='bx bx-check'></i></button>
+                </>
+              )}
+            </div>
+
             <button className="btn-guardar" onClick={handleClosePopup}>Guardar cambios</button>
           </div>
         </section>
