@@ -1,5 +1,6 @@
 import ReactSwitch from "react-switch"
 import { useState } from "react"
+import { useEffect } from "react"
 import { useChat } from "../context/ChatContext"
 import { useThemeContext } from "../context/ThemeContext"
 
@@ -11,10 +12,17 @@ export default function Chat() {
   const { users, selectedUser, setUsers } = useChat()
   const { contextTheme, setContextTheme } = useThemeContext()
   const [myName, setMyName] = useState('Julieta')
-  const [myValue, setMyValue] = useState("myName")
+  const [myValue, setMyValue] = useState(myName)
   const [showInput, setShowInput] = useState(false)
 
-  // 2. Buscamos el usuario activo
+  useEffect(() => {
+    const storedName = localStorage.getItem("username")
+    if (storedName) {
+      setMyName(storedName)
+      setMyValue(storedName)
+    }
+  }, [])
+
   const user = users.find(u => u.id === selectedUser)
 
   if (!user) {
@@ -25,12 +33,10 @@ export default function Chat() {
     )
   }
 
-  // 3. Manejo del input
   const handleChange = (event) => {
     setMsg(event.target.value)
   }
 
-  // 4. Cuando enviamos el formulario
   const handleSubmit = (event) => {
     event.preventDefault()
 
@@ -40,7 +46,6 @@ export default function Chat() {
       time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
     }
 
-    // ✅ Actualizamos el estado de manera INMUTABLE
     const updatedUsers = users.map(u =>
       u.id === user.id
         ? { ...u, messages: [...u.messages, newMessage] }
@@ -71,6 +76,7 @@ export default function Chat() {
 
   const handleSaveName = () => {
     setMyName(myValue)
+    localStorage.setItem("username", myValue)
     setShowInput(false)
   }
 
