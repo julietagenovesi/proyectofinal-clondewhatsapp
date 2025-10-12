@@ -191,7 +191,26 @@
 .chat-actions button:hover {
   background-color: #F6F5F4;
   border-radius: 50px;
+}
 
+.chat-actions a {
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+.chat-actions a:hover {
+  background-color: #F6F5F4;
+  border-radius: 50px;
 }
 
 /*Estilos chat-messages */

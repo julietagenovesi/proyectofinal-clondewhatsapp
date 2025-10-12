@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import { useChat } from "../context/ChatContext"
 import { useThemeContext } from "../context/ThemeContext"
+import { Link } from "react-router-dom"
 
 
 export default function Chat() {
@@ -152,7 +153,7 @@ export default function Chat() {
             <button title="Cámara"><i className='bx bx-camera'></i></button>
             <button title="Galería"><i className='bx bx-image'></i></button>
             <button title="Configuración" onClick={handleshowPopUp}><i className='bx bx-cog'></i></button>
-            <button title="Ayuda"><i className='bx bx-help-circle'></i></button>
+            <Link to="/help" title="Ayuda"><i className='bx bx-help-circle'></i></Link>
           </div>
         </header>
 
