@@ -56,18 +56,18 @@
   padding: 8px;
   gap: 15px;
   border-radius: 50px;
-  border: 1px solid #F6F5F4;
+  border: 2px solid #F6F5F4;
   margin: 0px 0px 10px 0px;
   cursor: pointer;
 }
 
 .search-container:hover {
-  border: 1px solid rgb(192, 192, 192);
+  border: 2px solid rgb(192, 192, 192);
 }
 
 .search-container:focus-within {
   background-color: white;
-  border: 1px solid #1DAA61;
+  border: 2px solid #1DAA61;
   ;
 }
 
@@ -423,6 +423,8 @@
   font-size: 12px;
 }
 
+/* Dark 
+  Estilos Sidebar */
 #Dark .sidebar {
   background-color: #161717;
   color: rgb(241, 241, 241);
@@ -439,3 +441,17 @@
 #Dark .header-sidebar button:hover {
   background-color: #242625;
 }
+
+#Dark .search-container {
+  color: white;
+  background-color: #2E302F;
+  border: 2px solid #2E302F;
+}
+
+#Dark .search-container:focus-within {
+  border: 2px solid #1DAA61;
+  ;
+}
+
+/* Dark 
+  Estilos user-list */
