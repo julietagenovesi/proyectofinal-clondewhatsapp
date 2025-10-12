@@ -455,3 +455,11 @@
 
 /* Dark 
   Estilos user-list */
+
+#Dark .user-info p {
+  font-weight: bold;
+}
+
+#Dark .user:hover {
+  background-color: #2E2F2F;
+}
