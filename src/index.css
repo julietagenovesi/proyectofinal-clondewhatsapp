@@ -230,6 +230,12 @@
   color: #979797;
 }
 
+.tema-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /*Estilos chat-Footer*/
 .chat-footer {
   margin: 0px 15px 15px 15px;
@@ -352,7 +358,7 @@
   width: 350px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 .login-main form label {
@@ -415,4 +421,21 @@
 .text-info {
   margin-top: 10px;
   font-size: 12px;
+}
+
+#Dark .sidebar {
+  background-color: #161717;
+  color: rgb(241, 241, 241);
+}
+
+#Dark .sidebar .header-sidebar h1 {
+  color: #f5f5f5;
+}
+
+#Dark .header-sidebar button {
+  color: white;
+}
+
+#Dark .header-sidebar button:hover {
+  background-color: #242625;
 }

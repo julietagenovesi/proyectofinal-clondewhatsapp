@@ -1,13 +1,15 @@
+import ReactSwitch from "react-switch"
 import { useState } from "react"
 import { useChat } from "../context/ChatContext"
-import { useTheme } from "../context/ThemeContext"
+import { useThemeContext } from "../context/ThemeContext"
+
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
   const [showPopup, setShowPopup] = useState(false)
-
-  // 1. Obtenemos del contexto todo lo necesario
+  const [checked, setChecked] = useState(false)
   const { users, selectedUser, setUsers } = useChat()
+  const { contextTheme, setContextTheme } = useThemeContext()
 
   // 2. Buscamos el usuario activo
   const user = users.find(u => u.id === selectedUser)
@@ -55,10 +57,12 @@ export default function Chat() {
     setShowPopup(false)
   }
 
-  const { theme, toggleTheme } = useTheme()
+  const handleSwitch = (nextChecked) => {
+    setContextTheme((state) => (state === 'Light' ? 'Dark' : 'Light'))
+    setChecked(nextChecked)
+  }
 
   return (
-
     <>
       {
         showPopup === true && <section className="contenedor-popup">
@@ -66,15 +70,23 @@ export default function Chat() {
             <h1>Ajustes</h1>
             <p>Personalizá tus chats</p>
             <h3>Tema</h3>
-            <label className="switch">
-              <input
-                type="checkbox"
-                checked={theme === "dark"}
-                onChange={toggleTheme}
-              />
-              <span className="slider"></span>
-              <p>Modo claro</p>
-            </label>
+            <div className="tema-switch">
+              <ReactSwitch
+                onChange={handleSwitch}
+                checked={checked}
+                onColor="#86d3ff"
+                onHandleColor="#2693e6"
+                handleDiameter={30}
+                uncheckedIcon={false}
+                checkedIcon={false}
+                boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                height={20}
+                width={48}
+                className="react-switch"
+                id="material-switch" />
+              <p>Modo {contextTheme}</p>
+            </div>
 
             <h3>Color de fondo</h3>
             <button className="btn-guardar" onClick={handleClosePopup}>Guardar cambios</button>
