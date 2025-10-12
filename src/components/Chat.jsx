@@ -141,7 +141,6 @@ export default function Chat() {
                 </>
               )}
             </div>
-
             <button className="btn-guardar" onClick={handleClosePopup}>Guardar cambios</button>
           </div>
         </section>

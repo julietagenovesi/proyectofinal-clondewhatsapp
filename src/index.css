@@ -399,7 +399,7 @@
 }
 
 .login-main img {
-  width: 15%;
+  width: 80px;
   margin-bottom: 15px;
 }
 
@@ -605,8 +605,13 @@
     font-size: 25px;
   }
 
-  .sidebar {
+  .chat {
     display: none;
+  }
+
+  .sidebar {
+    Flex: 1 0 100%;
+    Height: 100dvh
   }
 
   header {
