@@ -428,6 +428,7 @@
 #Dark .sidebar {
   background-color: #161717;
   color: rgb(241, 241, 241);
+  border-right: 2px solid #333333;
 }
 
 #Dark .sidebar .header-sidebar h1 {
