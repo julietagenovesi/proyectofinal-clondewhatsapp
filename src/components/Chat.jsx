@@ -146,7 +146,6 @@ export default function Chat() {
           </div>
         </section>
       }
-      {(showSidebar || window.innerWidth > 480) && <Sidebar onClose={() => setShowSidebar(false)} />}
       <div className="chat">
         <header className="chat-header">
           <div>
