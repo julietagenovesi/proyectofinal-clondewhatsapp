@@ -5,17 +5,19 @@ import { useChat } from "../context/ChatContext"
 import { useThemeContext } from "../context/ThemeContext"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
+import Sidebar from "../components/Sidebar"
 
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
   const [showPopup, setShowPopup] = useState(false)
   const [checked, setChecked] = useState(false)
-  const { users, selectedUser, setUsers } = useChat()
+  const { users, selectedUser, setUsers, setSelectedUser } = useChat()
   const { contextTheme, setContextTheme } = useThemeContext()
   const [myName, setMyName] = useState('Julieta')
   const [myValue, setMyValue] = useState(myName)
   const [showInput, setShowInput] = useState(false)
+  const [showSidebar, setShowSidebar] = useState(window.innerWidth > 480)
 
   const navigate = useNavigate()
 
@@ -34,8 +36,6 @@ export default function Chat() {
       localStorage.removeItem("userInChat");
     }
   }, [])
-
-
 
   const user = users.find(u => u.id === selectedUser)
 
@@ -146,11 +146,13 @@ export default function Chat() {
           </div>
         </section>
       }
+      {(showSidebar || window.innerWidth > 480) && <Sidebar onClose={() => setShowSidebar(false)} />}
       <div className="chat">
         <header className="chat-header">
           <div>
             <div className="chat-user">
-              <button className="btn-volver"> <i className='bx bx-arrow-back'></i> </button>
+              {window.innerWidth <= 480 && !showSidebar && (
+                <button className="btn-volver" onClick={() => setSelectedUser(null)}> <i className='bx bx-arrow-back'></i> </button>)}
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
                 alt={user.name}
