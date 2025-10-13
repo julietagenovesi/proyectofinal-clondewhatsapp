@@ -141,6 +141,7 @@ export default function Chat() {
                 </>
               )}
             </div>
+
             <button className="btn-guardar" onClick={handleClosePopup}>Guardar cambios</button>
           </div>
         </section>
@@ -149,6 +150,7 @@ export default function Chat() {
         <header className="chat-header">
           <div>
             <div className="chat-user">
+              <button className="btn-volver"> <i className='bx bx-arrow-back'></i> </button>
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
                 alt={user.name}
