@@ -5,8 +5,6 @@ import { useChat } from "../context/ChatContext"
 import { useThemeContext } from "../context/ThemeContext"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-import Sidebar from "../components/Sidebar"
-
 
 export default function Chat() {
   const [msg, setMsg] = useState("")

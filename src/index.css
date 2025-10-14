@@ -720,6 +720,11 @@ main li strong {
   color: white;
 }
 
+/*Dark Estilos Help */
+#Dark .help {
+  background-color: #2E302F;
+}
+
 /* brakepoint */
 @media (max-width: 480px) {
   .app {

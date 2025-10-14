@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom"
+import { useThemeContext } from "../context/ThemeContext"
+
 
 const Help = () => {
+
+  const { contextTheme } = useThemeContext()
   return (
-    <main>
+    <main className={contextTheme === "Dark" ? "dark" : "light"}>
       <section className="help">
         <h1>Centro de ayuda</h1>
 

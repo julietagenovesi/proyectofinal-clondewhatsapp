@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "../views/Login";
 import { Messages } from "../views/Messages";
+import { Help } from "../views/Help";
 import { NotFound } from "../views/NotFound";
 import ProtectedRoute from "../components/ProtectedRoute";
-import { Help } from "../views/Help";
 import ProtectedRouteHelp from "../components/ProtectedRouteHelp";
 
 const RouterApp = () => {
