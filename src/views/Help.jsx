@@ -3,12 +3,12 @@ import { useThemeContext } from "../context/ThemeContext"
 
 
 const Help = () => {
+  const { contextTheme, setContextTheme } = useThemeContext()
 
-  const { contextTheme } = useThemeContext()
   return (
-    <main className={contextTheme === "Dark" ? "dark" : "light"}>
+    <main id={contextTheme === "Dark" ? "Dark" : "light"} >
       <section className="help">
-        <h1>Centro de ayuda</h1>
+        <h1 className="h1-help">Centro de ayuda</h1>
 
         <section className="introduccion">
           <h2>Descripción de la aplicación:</h2>

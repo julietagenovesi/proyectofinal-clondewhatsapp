@@ -4,7 +4,7 @@ import { ChatProvider, useChat } from "../context/ChatContext"
 import { ThemeContextProvider, useThemeContext } from "../context/ThemeContext.jsx"
 
 const MessagesContent = () => {
-  const { contextTheme } = useThemeContext() // obtenemos el tema actual
+  const { contextTheme } = useThemeContext()
   const { selectedUser } = useChat();
 
   return (

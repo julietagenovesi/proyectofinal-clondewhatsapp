@@ -328,7 +328,7 @@ main {
   margin-top: 40px;
 }
 
-main h1 {
+.h1-help {
   text-align: center;
   color: #1DAA61;
   padding: 20px;
@@ -682,6 +682,10 @@ main li strong {
   font-weight: 400px;
 }
 
+#Dark .user-not-found {
+  background-color: black;
+}
+
 /*Dark Estilos chat-Footer*/
 #Dark .chat-footer {
   background-color: #2E302F;
@@ -721,9 +725,6 @@ main li strong {
 }
 
 /*Dark Estilos Help */
-#Dark .help {
-  background-color: #2E302F;
-}
 
 /* brakepoint */
 @media (max-width: 480px) {
