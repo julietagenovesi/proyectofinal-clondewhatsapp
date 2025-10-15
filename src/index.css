@@ -724,8 +724,6 @@ main li strong {
   color: white;
 }
 
-/*Dark Estilos Help */
-
 /* brakepoint */
 @media (max-width: 480px) {
   .app {

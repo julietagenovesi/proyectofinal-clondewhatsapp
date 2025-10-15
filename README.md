@@ -1,12 +1,31 @@
-# React + Vite
+Clon de Whatsapp - Aplicación para chatear en tiempo real
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desarrollo web con React:
+Clon de whatsapp es una aplicación que desarrollo como proyecto final del curso de Desarrollador web-front end en UTN para poder demostrar como son aplicados todos los conocimientos aprendidos durante la cursada.
 
-Currently, two official plugins are available:
+Funciones principales:
+Acceso a chats a traves de un sidebar
+Enviar mensajes en tiempo real
+Ajustes de app mediante un pop up:
+  Interfaz personalizable con modo oscuro y claro
+  Cambiar nombre de uruario
+Acceso a la página de ayuda que muestra el funcionamiento de la app.
+Persistencia de datos guardados en localstorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologías utilizadas:
+React + Vite
+React Router: Para establecer rutas
+Context: Generar contextos para aplicarlos a todas las paginas de la app (ThemeContext y ChatContext)
+CSS 
 
-## Expanding the ESLint configuration
+Rutas principales:
+Login
+Messages
+Help
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Posibles mejoras:
+Validar lectura del mensaje (visto)
+Funcionamiento de todos los botones de ChatHeader
+Adjuntar imagenes
+Crear grupos
+Agregar un contacto
