@@ -6,26 +6,26 @@ Clon de whatsapp es una aplicación que desarrollo como proyecto final del curso
 
 ### Funciones principales:
 
-**Acceso a chats** a traves de un sidebar.
-**Enviar mensajes** en tiempo real.
-**Ajustes de app** mediante un pop up:
+- **Acceso a chats** a traves de un sidebar.
+- **Enviar mensajes** en tiempo real.
+- **Ajustes de app** mediante un pop up:
   Interfaz personalizable con modo dark y light.
   Cambiar nombre de uruario.
-**Página de ayuda** donde se explica el el funcionamiento de la app.
-**Persistencia de datos** guardados en localstorage.
+- **Página de ayuda** donde se explica el el funcionamiento de la app.
+- **Persistencia de datos** guardados en localstorage.
 
 ### Tecnologías utilizadas:
 
-**React + Vite**
-**React Router:** Para establecer rutas.
-**Context:** Generar contextos para aplicarlos a todas las paginas de la app _(ThemeContext y ChatContext)._
-**CSS** Para aplicar estilos a toda la app, _estilos light y dark._
+- **React + Vite**
+- **React Router:** Para establecer rutas.
+- **Context:** Generar contextos para aplicarlos a todas las paginas de la app _(ThemeContext y ChatContext)._
+- **CSS** Para aplicar estilos a toda la app, _estilos light y dark._
 
 ### Rutas principales:
 
-Login
-Messages
-Help
+- **Login**: /
+- **Messages**: /Chat
+- **Help**: /Help
 
 ### Posibles mejoras:
 
@@ -36,4 +36,6 @@ Crear grupos
 Agregar un contacto
 
 
-**Proyecto subido a vercel:** [Clon de Whatsapp - Vercel] (https://proyectofinal-clondewhatsapp.vercel.app/)
+**Proyecto subido a vercel:** 
+
+[Clon de Whatsapp - Vercel](https://proyectofinal-clondewhatsapp.vercel.app/).
