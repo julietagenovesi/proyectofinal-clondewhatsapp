@@ -2,7 +2,7 @@
 
 ## Desarrollo web con React:
 
-Clon de whatsapp es una aplicación que desarrollo como proyecto final del curso de Desarrollador web-front end en UTN para poder demostrar como son aplicados todos los conocimientos aprendidos durante la cursada.
+Clon de whatsapp es una aplicación que desarrollo como proyecto final del curso de Programador Web Inicial - Front End Developer en UTN para poder demostrar como son aplicados todos los conocimientos aprendidos durante la cursada.
 
 ### Funciones principales:
 
