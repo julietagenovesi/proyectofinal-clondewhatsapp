@@ -1,10 +1,21 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useState, useEffect } from "react"
 
 export const ThemeContext = createContext()
 
+
+
 export const ThemeContextProvider = ({ children }) => {
-  const [contextTheme, setContextTheme] = useState('Light')
+  const [contextTheme, setContextTheme] = useState(() => {
+    return localStorage.getItem("appTheme") || "Light"
+  })
+
+  useEffect(() => {
+    localStorage.setItem("appTheme", contextTheme)
+  }, [contextTheme])
+
   const values = { contextTheme, setContextTheme }
+
+
 
   return (
     <ThemeContext.Provider value={values}>
